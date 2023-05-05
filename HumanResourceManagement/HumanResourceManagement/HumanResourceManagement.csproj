@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03BCD438-4877-49EA-A68D-AEEFDB5D91C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HumanResourceManagement</RootNamespace>
+    <AssemblyName>HumanResourceManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AfterLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AfterLogin.Designer.cs">
+      <DependentUpon>AfterLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Acount_Child\AllAcount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Acount_Child\AllAcount.Designer.cs">
+      <DependentUpon>AllAcount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Department_Child\AddDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Department_Child\AddDepartment.Designer.cs">
+      <DependentUpon>AddDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Department_Child\EditDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Department_Child\EditDepartment.Designer.cs">
+      <DependentUpon>EditDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Employee_Child\AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Employee_Child\AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Employee_Child\EditEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Employee_Child\EditEmployee.Designer.cs">
+      <DependentUpon>EditEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\LevelSalary_Child\AddLevelSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\LevelSalary_Child\AddLevelSalary.Designer.cs">
+      <DependentUpon>AddLevelSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\LevelSalary_Child\EditLevelSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\LevelSalary_Child\EditLevelSalary.Designer.cs">
+      <DependentUpon>EditLevelSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\PayRoll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\PayRoll.Designer.cs">
+      <DependentUpon>PayRoll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\PayRoll_Child\PayRollDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\PayRoll_Child\PayRollDetail.Designer.cs">
+      <DependentUpon>PayRollDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Position_Child\AddPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Position_Child\AddPosition.Designer.cs">
+      <DependentUpon>AddPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Position_Child\EditPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Position_Child\EditPosition.Designer.cs">
+      <DependentUpon>EditPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Rate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Rate.Designer.cs">
+      <DependentUpon>Rate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Rate_Child\AddDiscipline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Rate_Child\AddDiscipline.Designer.cs">
+      <DependentUpon>AddDiscipline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Rate_Child\AddReward.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Rate_Child\AddReward.Designer.cs">
+      <DependentUpon>AddReward.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Rate_Child\EditDiscipline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Rate_Child\EditDiscipline.Designer.cs">
+      <DependentUpon>EditDiscipline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Rate_Child\EditReward.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Rate_Child\EditReward.Designer.cs">
+      <DependentUpon>EditReward.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Statistical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Statistical.Designer.cs">
+      <DependentUpon>Statistical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\TimeSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\TimeSheet.Designer.cs">
+      <DependentUpon>TimeSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\TimeSheet_Child\TimeSheetDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\TimeSheet_Child\TimeSheetDetail.Designer.cs">
+      <DependentUpon>TimeSheetDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\UpdateDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\UpdateDepartment.Designer.cs">
+      <DependentUpon>UpdateDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\UpdateLevelSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\UpdateLevelSalary.Designer.cs">
+      <DependentUpon>UpdateLevelSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\UpdatePosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\UpdatePosition.Designer.cs">
+      <DependentUpon>UpdatePosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\UpdateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\UpdateEmployee.Designer.cs">
+      <DependentUpon>UpdateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUI\CTTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomUI\CTTextBox.Designer.cs">
+      <DependentUpon>CTTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\DepartmentDAO.cs" />
+    <Compile Include="DAO\DisciplineDAO.cs" />
+    <Compile Include="DAO\EmployeeDAO.cs" />
+    <Compile Include="DAO\LevelSalaryDAO.cs" />
+    <Compile Include="DAO\PayRollDAO.cs" />
+    <Compile Include="DAO\PayRollDetailDAO.cs" />
+    <Compile Include="DAO\PositionDAO.cs" />
+    <Compile Include="DAO\RewardDAO.cs" />
+    <Compile Include="DAO\StaticsticalDAO.cs" />
+    <Compile Include="DAO\TimeSheetDAO.cs" />
+    <Compile Include="DAO\TimeSheetDetailDAO.cs" />
+    <Compile Include="DTO\DepartmentDTO.cs" />
+    <Compile Include="DTO\DisciplineDTO.cs" />
+    <Compile Include="DTO\EmployeeDTO.cs" />
+    <Compile Include="DTO\LevelSalaryDTO.cs" />
+    <Compile Include="DTO\PayRollDetailDTO.cs" />
+    <Compile Include="DTO\PayRollDTO.cs" />
+    <Compile Include="DTO\PositionDTO.cs" />
+    <Compile Include="DTO\RewardDTO.cs" />
+    <Compile Include="DTO\TimeSheetDetailDTO.cs" />
+    <Compile Include="DTO\TimeSheetDTO.cs" />
+    <Compile Include="DTO\UserDTO.cs" />
+    <Compile Include="frmAccountLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccountLogin.Designer.cs">
+      <DependentUpon>frmAccountLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionSupport.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DAO\UserLoginDAO.cs" />
+    <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="AfterLogin.resx">
+      <DependentUpon>AfterLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Acount_Child\AllAcount.resx">
+      <DependentUpon>AllAcount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Department_Child\AddDepartment.resx">
+      <DependentUpon>AddDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Department_Child\EditDepartment.resx">
+      <DependentUpon>EditDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Employee_Child\AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Employee_Child\EditEmployee.resx">
+      <DependentUpon>EditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\LevelSalary_Child\AddLevelSalary.resx">
+      <DependentUpon>AddLevelSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\LevelSalary_Child\EditLevelSalary.resx">
+      <DependentUpon>EditLevelSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\PayRoll.resx">
+      <DependentUpon>PayRoll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\PayRoll_Child\PayRollDetail.resx">
+      <DependentUpon>PayRollDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Position_Child\AddPosition.resx">
+      <DependentUpon>AddPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Position_Child\EditPosition.resx">
+      <DependentUpon>EditPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Rate.resx">
+      <DependentUpon>Rate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Rate_Child\AddDiscipline.resx">
+      <DependentUpon>AddDiscipline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Rate_Child\AddReward.resx">
+      <DependentUpon>AddReward.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Rate_Child\EditDiscipline.resx">
+      <DependentUpon>EditDiscipline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Rate_Child\EditReward.resx">
+      <DependentUpon>EditReward.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Statistical.resx">
+      <DependentUpon>Statistical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\TimeSheet.resx">
+      <DependentUpon>TimeSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\TimeSheet_Child\TimeSheetDetail.resx">
+      <DependentUpon>TimeSheetDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\UpdateDepartment.resx">
+      <DependentUpon>UpdateDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\UpdateLevelSalary.resx">
+      <DependentUpon>UpdateLevelSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\UpdatePosition.resx">
+      <DependentUpon>UpdatePosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\UpdateEmployee.resx">
+      <DependentUpon>UpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomUI\CTTextBox.resx">
+      <DependentUpon>CTTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccountLogin.resx">
+      <DependentUpon>frmAccountLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroudMainPTS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary_marketing_income_financial_earn_money_is_work_icon_230565.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalog_icon_215654.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4124841-finance-report-graph-analysis-graph-report-sale-report-stock-report_114127.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\canceltheapplication_cancelar_2901.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked1_77964 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diagram.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File_New_add_10247.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4105934-document-edit-edit-document-update-write-writing_113937.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_archive_application_4473.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_4219.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\github_logo_icon_145252.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sheetandpencil_118361.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-page-arrow-button_icon-icons.com_53909.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_visible_hide_hidden_show_icon_145988.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_slash_visible_hide_hidden_show_icon_145987.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_out_solid_icon_235722.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592853-align-employee-general-human-human-list-list-member_107786.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592854-add-user-business-man-employee-general-human-member-office_107767.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592855-business-man-employee-general-human-member-office-tie_107745.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592854-add-user-business-man-employee-general-human-member-office_107767 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592826-employee-human-member-office-remove-remove-user-user_107791.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
